@@ -1,0 +1,244 @@
+Body{
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: Arial;
+}
+
+
+/*header*/
+.Heading {
+  text-align: left;
+  background-color:black;
+  padding-left: 4px;
+  color: white;
+  height: 45px;
+  font-size: 35px;
+}
+
+.header{
+  text-align: center;
+  color: lightgrey;
+}
+
+/*dots*/
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* add task button */
+.addL{
+	position: fixed;
+	text-align: center;
+	bottom: 100px;
+	width: 60%;
+	margin: 0 20% 0 20%;
+	height: 50px;
+	background-color: black;
+	border-radius: 25px;
+	padding: 0px 25px;
+}
+
+.addL a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*menu mobile bar*/
+.nav_menu{
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  border-style: ridge;
+ }
+
+.nav_menu a{
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_menu a{
+    padding: 18px 18px;
+    margin-left: -5px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.nav_menu{
+  display: inline-block;
+      height: 10%;
+      margin-top: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* For desktop */
+@media (min-width: 800px) {
+	body{
+		margin: auto;
+		width: 380px;
+		height: 670px;
+	}
+	.nav{
+			width: 380px;
+	}
+	.addL{
+		width: 200px;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+/* tasks container*/
+.pamphlet{
+	justify-content: center;
+}
+
+table {
+	text-align: center;
+  margin: initial;
+  width: -webkit-fill-available;
+}
+
+.booklet {
+	border-radius: 10px;
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	overflow-y: scroll;
+	min-height:50px;
+	max-height:200px;
+	background-color: #fefefe;
+}
+
+::placeholder {
+	text-align: right;
+}
+
+/* styles*/
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: .25rem .75rem;
+  width: 100%;
+	background-color: #fefefe;
+	text-align: right;
+}
+
+textarea {
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 26px;
+  margin: 0 0 20px;
+  padding: .25rem .75rem;
+  width: 100%;
+	background-color: transparent;
+	text-align: right;
+}
+
+button{
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+	background: #000;
+	border-radius: 15px;
+	border: 1px solid #18ab29;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 9px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+	height: 60px;
+	width: 100px;
+}
+
+.delbtn {
+	background: #000;
+	border-radius: 15px;
+  height: 40px;
+  width: 80px;
+	border: 1px solid #fff;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 18px;
+  color: white;
+	text-decoration: none;
+  margin-top: 5px;
+}
+
+.btngroup {
+	display: flex;
+	margin-top: 5%;
+}
+
+.btn a{
+	text-decoration: none;
+	color: white;
+}
+
+.donebtn {
+	margin-left: 38%;
+}
