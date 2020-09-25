@@ -31,9 +31,7 @@ function ToDoListslog(evt) {
       var removeButton = document.createElement('button');
       removeButton.setAttribute('class', 'delbtn');
       removeButton.innerHTML = 'Remove';
-
       removeButton.dataset.key = i;
-
       removeButton.addEventListener('click', removetab, false);
       removeRow.appendChild(removeButton);
 
@@ -102,14 +100,18 @@ function ToDoListslog(evt) {
   };
 };
 
+/*add to the local storage*/
 ToDoListslog();
+
 
 /*remove function*/
 function removetab(evt) {
 
   var key = parseInt(evt.target.dataset.key);
   var count = key;
-
+/*alert*/
+  if (confirm('Are you sure you want to remove this file from the database?')) {
+/*remove*/
   for(var i=key; i < localStorage.length; i++) {
     if(localStorage.getItem(i+1) != null){
       var file = localStorage.getItem(i+1);
@@ -118,7 +120,61 @@ function removetab(evt) {
     count+=1;
   };
   localStorage.removeItem(count);
+} else {
+/* keep*/
+}
 
   /*direct to*/
   window.location.href = "index.html";
+  };
+
+
+  //complete and incomplete function
+  var complete = function(){
+      this.innerHTML = 'Incomplete';
+      this.removeEventListener('click',complete);
+      this.addEventListener('click',incomplete);
+  }
+
+  var incomplete = function(){
+      this.innerHTML = 'Complete';
+      this.removeEventListener('click',incomplete);
+      this.addEventListener('click',complete);
+  }
+
+  //function to chage the dom of the list of todo list
+  var createItemDom = function(status){
+      var listItem = document.createElement('td');
+      var completeButton = document.createElement('button');
+      var inCompleteButton = document.createElement('button');
+  //block
+      listItem.className = (status == 'incomplete');
+  //appearing buttons
+      completeButton.className = ('class', 'delbtn');
+  //appearing the buttons label
+      completeButton.innerHTML = (status == 'incomplete')?'Complete':'Incomplete';
+  //condition
+      if('incomplete'){
+          completeButton.addEventListener('click',complete);
+      }else{
+          completeButton.addEventListener('click',incomplete);
+      }
+
+      listItem.appendChild(completeButton);
+
+      return listItem;
+  }
+
+
+
+  window.onload = function(evt){
+
+          for(var i=0; i<localStorage.length;i++){
+              var file = localStorage[i].content;
+
+              var count = createItemDom(file,localStorage[i].status);
+              todoList.appendChild(count);
+
+        }
+
   };

@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<html>
 <head>
   <title>HIT238 Baby Tracker Prototype</title>
+
+<style>
+/*preload style*/
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+  .prescreen {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/Preloader_2.gif) center no-repeat #fff;
+  }
+</style>
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="HTML,CSS,XML, charset=utf-8">
+  <meta name="keywords" content="HTML,CSS,XML", charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css_files\style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="S316974">
+  <!--CSS layout-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--Preload js-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+  <script>
+  /*preload function*/
+  	$(window).load(function() {
+  		$(".prescreen").fadeOut("slow");;
+  	});
+  </script>
 </head>
 
 <body>
+  <!--preload screen -->
+<div class="prescreen"></div>
+<!--Header-->
   <div class="Heading">Baby Tracker</div>
     <h1 class="header">Schedules</h1>
-
+<!--container files-->
     <div class="pamphlet">
-				<div class="booklet" style="max-height: 260px; margin-top: 15px;">
+				<div class="booklet" id="todoList" style="max-height: 260px; margin-top: 15px;">
 					<table align="center" class="logtable">
 					</table>
 				</div>
+<!--line-->
           <hr>
+<!--dots-->
           <div style="text-align: center; margin-top: -20px;">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -30,29 +61,30 @@
           </div>
 		</div>
 
-		<a href="tasks.html">
+<!--add button-->
+		<a href="html_files/tasks.html">
       <div class="addL">
         <h2 style="font-size: 20px; margin-top: 15px; color: white">Add To Do Lists</h2>
 			</div>
 		</a>
 
+<!--bars-->
   <div class="nav_menu">
     <a href="index.html"><span class="glyphicon glyphicon-time"></span><br>Schedules</a>
-    <a href="account.html"><span class="glyphicon glyphicon-user"></span><br>Profile</a>
+    <a href="html_files/account.html"><span class="glyphicon glyphicon-user"></span><br>Profile</a>
+<!--sidebar-->
         <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="faq.html">FAQ</a>
-        <a href="aboutus.html">About Company</a>
-        <a href="p&p.html">Privacy & Policy</a>
-        <a href="support.html">Feedback</a>
-        <a href="rate.html">Rate Us</a>
-        <a href="signout.html">Sign out</a>
-        <a href="">Version 1.0</a>
+        <a href="html_files/faq.html">FAQ</a>
+        <a href="html_files/aboutus.html">About Company</a>
+        <a href="http://www.cdu.edu.au/governance/doclibrary/pol-032.pdf">Privacy & Policy</a>
+        <a href="html_files/support.html">Feedback</a>
+        <a href="html_files/rate.html">Rate Us</a>
+        <a href="html_files/signout.html">Sign out</a>
+        <a href="">Version 1.1</a>
         </div>
           <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </div>
-
 </body>
-
   <script type="text/javascript" src="js_files/index.js"></script>
 </html>

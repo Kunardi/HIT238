@@ -44,5 +44,5 @@ function sendtask(evt) {
 
   /*checkout*/
   localStorage.setItem(totalkeys + 1, storetodolist);
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 };
