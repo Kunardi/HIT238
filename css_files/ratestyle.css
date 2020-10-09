@@ -28,11 +28,11 @@ Body{
 .Heading {
   text-align: left;
   background-color:black;
-  padding-left: 4px;
+  padding-left: 18px;
   color: white;
   height: 45px;
   font-size: 35px;
-  padding-right: 128px;
+  width: -webkit-fill-available;
   margin-top: -156px;
 }
 
@@ -46,8 +46,8 @@ Body{
 .nav_menu{
   background-color: white;
   position: fixed;
-  bottom: 23px;
-  width: 97%;
+  bottom: 26px;
+  width: 100%;
   text-align: center;
   border-style: ridge;
  }

@@ -1,0 +1,404 @@
+Body{
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: 'Poppins', sans-serif, Arial;
+}
+
+/*header*/
+.Heading {
+  text-align: left;
+  background-color:black;
+  padding-left: 15px;
+  color: white;
+  height: 45px;
+  font-size: 35px;
+}
+
+.header{
+  text-align: center;
+  color: lightgrey;
+}
+
+*{
+
+    padding: 0;
+     box-sizing: border-box;
+
+}
+
+.btn {
+	background: #000;
+	border-radius: 15px;
+	border: 1px solid #18ab29;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 9px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+	height: 60px;
+	width: 100px;
+}
+
+/*login page*/
+.loginpage{
+    background-color: gainsboro;
+    padding: 5em;
+}
+
+.form-container{
+    width: 20em;
+    height:auto;
+    padding:128px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: -44px;
+}
+
+.form-container1{
+    width: 20em;
+    height:auto;
+    padding:128px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: -115px;
+}
+
+ul.list{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list p{
+    text-align: left;
+}
+
+ul.list li{
+    width:300px;
+    margin-bottom: 15px;
+    padding-left: 2%;
+}
+
+ul.list li input{
+    width: 300px;
+    text-align: center;
+    padding: 8px 0px;
+    border: none;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+
+ul.list li input[type="button"]{
+    background-color: black;
+    color: white;
+    padding-left: 2%;
+}
+
+
+/*-------------------------------------------Profile Page*/
+*{
+    position:relative ;
+    box-sizing:border-box;
+    font-size: 20px;
+    font-family: 'roboto',sans-serif;
+}
+.content {
+    max-width: 1430px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: auto;
+    padding-bottom: 38%;
+
+}
+a {
+    text-decoration: none;
+}
+header{
+    width:100%;
+    height: 200px;
+    box-shadow: 0 2px 10px 0 rgba(25,25,25,0.5), 0 4px 13px rgba(25,25,25,0.2);
+    background:darkblue;
+    display: table;
+
+}
+header .name{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    text-align:center;
+    width: 40%;
+
+
+}
+.ava{
+    overflow: auto;
+    display: table-cell;
+    vertical-align: middle;
+    width:30%;
+
+
+}
+.ava img{
+    position: relative;
+    float: right;
+    border: 2px solid white;
+    width:130px;
+    height: auto;
+    border-radius: 100px;
+    margin-right: 15%
+
+}
+
+aside{
+    float: left;
+    width:29%;
+    margin-top: 10px;
+
+}
+aside .name{
+    width:30%;
+    display:inline-block;
+}
+aside .vl{
+    width:68%;
+    display:inline-block;
+}
+
+aside .skill{
+    width: 85%;
+    height: 10px;
+    margin-bottom: 20px;
+    background: lightgray;
+    border-radius: 5px;
+}
+p{
+    display: block;
+    clear:both;
+    word-wrap: break-word;
+    margin-top: 0px;
+}
+
+
+aside .skill-right {
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    background:darkblue;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+div.r1{
+    width:90%;
+}
+div.r2{
+    width:75%;
+}
+div.r3{
+    width:40%;
+}
+div.r4{
+    width:90%;
+}
+div.r5{
+    width:70%;
+}
+div.r6{
+    width:65%;
+}
+div.r7{
+    width:80%;
+}
+
+section{
+    float: left;
+    width:70%;
+    margin-top:10px ;
+    margin-left:8px;
+}
+.box{
+    display:block;
+    padding:14px;
+    margin: 8px 0;
+    background:white;
+    width:100%;
+    box-shadow:0 0 5px rgba(25,25,25,0.3), 0 0 8px rgba(25,25,25,0.1) ;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background: #d1d1d1;
+    padding: 5px;
+    font-size: 20px;
+    color: darkblue;
+}
+.title >i{
+    font-size:26px!important;
+}
+i{
+    font-size:18px!important;
+    color: darkblue;
+    margin-right: 10px;
+
+}
+ul{
+    padding-left: 16px;
+}
+.padd-top {
+    padding-top: 35px;
+}
+.padd-left{
+    padding-left: 25px;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width:1000px){
+    aside, section {
+       width:100%;
+       margin-left: 0;
+   }
+    .main1{
+        width: 80%;
+        margin:0;
+        padding-left: 10%;
+        padding-right: 3%;
+        float: right;
+    }
+    .main2{
+        width: 80%;
+        margin:0;
+        padding: 0% 3%;
+    }
+
+}
+@media only screen and (max-width:500px){
+   .ava{
+       width:100%;
+       position: relative;
+       clear: both;
+       overflow: auto;
+       display: block;
+   }
+   .ava img{
+       float: none;
+       right: 0;
+       border: 6px solid white;
+       width:180px;
+       height: auto;
+       border-radius: 100px;
+       position: relative;
+       transform: translateX(-50%)0;
+       margin-left: 33%
+   }
+   header .name{
+       text-shadow: 0 0 3px white;
+       color: blue;
+       width: 100%;
+       position: absolute;
+       bottom: -96px;
+       text-align: center;
+       font-weight: bolder;
+
+
+   }
+   header{
+       width:100%;
+       height: 200px;
+       box-shadow: 0 2px 10px 0 rgba(25,25,25,0.5), 0 4px 13px 0 rgba(25,25,25,0.2);
+       background-size: 100% auto;
+
+   }
+   .content {
+       margin-top: 90px;
+   }
+
+    .form-container2{
+    width: 20em;
+    height:auto;
+    padding:40px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+
+}
+    ul.flist{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.flist li{
+    width:300px;
+    margin-bottom: 15px;
+}
+
+.form-container3{
+    width:20em;
+    height:auto;
+    padding:40px 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: auto;
+}
+
+ul.list-change{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list-change p{
+    text-align: left;
+}
+
+ul.list-change li{
+    width:320px;
+    margin-bottom: 15px;
+
+}
+
+ul.list-change li input{
+    width: 320px;
+    text-align: center;
+    padding:10px 0px;
+    border: none;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+ul.list-change li input[type="button"]{
+    background-color:darkblue;
+    color: white;
+    padding-left: 2%;
+}
+
+ul.list-change li:nth-child(5){
+    color: red;
+}
+
+    .stylebutton button{
+    width: 30%;
+    height: 50px;
+
+}
+
+    @media only screen and (max-width:400px){
+
+ .stylebutton button{
+    width: 30%;
+    height: 50px;
+
+}
+    }

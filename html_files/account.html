@@ -5,7 +5,7 @@
   <title>HIT238 Baby Tracker Prototype</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="HTML,CSS,XML", charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="../css_files/style.css">
+  <link rel="stylesheet" type="text/css" href="../css_files/accountstyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="S316974">
   <!--CSS layout-->
@@ -15,30 +15,29 @@
 <body>
 <!--Header-->
   <div class="Heading">Baby Tracker</div>
-    <h1 class="header">Add Task</h1>
+    <h1 class="header">Profile</h1>
 
-    			<form action="../index.html" class="ToDoLists">
-  <!--back button-->
-              <div class="bbtn" style="margin-bottom: 10px;">
-                <a href="../index.html"><button type="button" value="Back" class="btn" id="backbtn" name="backbtn" style="color: white;">< Back</button></a>
-              </div>
-<!--Form-->
-    				<label for="caption">Caption</label>
-    				<input id="caption" type="text" name="caption" placeholder="Place caption here" style="text-align:left;" required></input>
+    <div class="card-container">
 
-            <label for="date">Date</label>
-            <input id="date" type="date" name="date" value="" class=""></input>
+  		<div class="upper-container">
+  			<div class="image-container">
+  				<img src="../images/noimage.png" />
+  			</div>
+  		</div>
 
-            <label for="time">Time</label>
-            <input id="time" type="time" name="time" value=""></input>
+  		<div class="lower-container">
+  			<div>
+  				<h3 id="name"></h3>
+  				<h4>CDU Student</h4>
+  			</div>
+  			<div style="margin-top: 25px;">
+  				<p>she is a student at CDU and work as nanny as a casual job.
+            the interest may include graduate from the course and do the casual job to survive.
+          </p>
+  			</div>
+  		</div>
 
-    				<label for="note">Note</label>
-    				<textarea id="note" type="text" name="note" placeholder="Place note here" style="text-align:left; height: 80px;"></textarea>
-<!--Remove button-->
-    					<div class="donebtn" style="margin-top: 10px;">
-    						<button type="submit" class="btn" id="savebtn" style="color: white;">Confirm</button>
-    					</div>
-    			</form>
+  	</div>
 
 <!--bars-->
   <div class="nav_menu">
@@ -59,5 +58,5 @@
 
 </body>
 
-  <script type="text/javascript" src="../js_files/addtasks.js"></script>
+  <script type="text/javascript" src="../js_files/account.js"></script>
 </html>
